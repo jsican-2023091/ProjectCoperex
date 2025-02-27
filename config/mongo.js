@@ -1,6 +1,6 @@
 //Conexión a la BD
 
-import mongoose, { mongo } from "mongoose"
+import mongoose from "mongoose"
 
 export const connect = async() => {
     try {
