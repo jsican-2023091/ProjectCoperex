@@ -1,4 +1,5 @@
 import { Router } from "express"
+import { getAll, updateUser } from "./user.controller.js"
 
 const api = Router()
 

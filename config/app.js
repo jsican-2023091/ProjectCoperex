@@ -25,6 +25,7 @@ const configs = (app) => {
 }
 
 const routes = (app) => {
+
     app.use(authRoutes)
     app.use('/v1/category', categoryRoutes)
     app.use('/v1/company', companyRoutes)

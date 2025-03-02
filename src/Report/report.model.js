@@ -11,11 +11,9 @@ const reportSchema = Schema(
         company: {
             type: mongoose.Schema.Types.ObjectId,
             ref: 'Company',
-            required: [true, 'Company is required']
         },
         ExelFile: {
-            type: String,
-            required: true
+            type: String
         }
 
     }

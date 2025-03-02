@@ -12,13 +12,14 @@ const companySchema = Schema(
             type: String,
             required: [true, 'Level of Impact is required']
         },
-        YearsExperiencie: {
+        yearsExperiencie: {
             type: String,
             required: [true, 'Years of experiencie is requiredis required']
         },
-        businessCatewgory: {
-            type: String,
-            required: [true, 'Business Category is required']
+        category: {
+            type: Schema.Types.ObjectId,
+            ref: 'Category',
+            required: [true, 'Category is required']
         },
         direction: {
             type: String,
@@ -27,7 +28,11 @@ const companySchema = Schema(
         contact: {
             type: String,
             required: [true, 'Contact is required']
-        } 
+        },
+        registrationDay:{
+            type: Date,
+            default: Date.now
+        }
         
     }
 )
